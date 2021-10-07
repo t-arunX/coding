@@ -1,3 +1,4 @@
+#sorting method
 def sl(array):
     count = 0
     for k in range(len(array)):
@@ -9,7 +10,7 @@ def sl(array):
                 count += 1
     return array[-2]
 
-
+#comparision method
 def sll(array):
     element = 0
     scnd = 0
