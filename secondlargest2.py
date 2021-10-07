@@ -1,4 +1,4 @@
-#soring method
+#sorting method
 def sl(array):
     count = 0
     for k in range(len(array)):
