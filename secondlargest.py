@@ -14,11 +14,12 @@ def sl(array):
 def sll(array):
     element = 0
     scnd = 0
-    for l in range(len(array) - 1):
-        if (array[l] > array[l + 1]):
-            element = array[l]
+    for l in range(len(array)-1):
+        if (element < array[l + 1]):
+            element = array[l+1]
+            print(element)
 
-    for m in range(len(array) - 1):
+    for m in range(len(array)):
         if (array[m] > scnd and array[m] < element):
             scnd = array[m]
     return scnd
@@ -27,6 +28,6 @@ def sll(array):
 n = int(input())
 lst = list()
 for i in range(n):
-    lst.append(sl(list(map(int, input().split()))))
+    lst.append(sll(list(map(int, input().split()))))
 for i in lst:
     print(i)
